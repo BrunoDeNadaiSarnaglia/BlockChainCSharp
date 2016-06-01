@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace BlockChainMiner
 {
-    public interface ISha
+    interface IHasher
     {
-        byte[] Value { get; }
+        ISha Compute(int nonce);
     }
 }

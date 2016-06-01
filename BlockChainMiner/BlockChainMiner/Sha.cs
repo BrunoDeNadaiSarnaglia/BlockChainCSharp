@@ -11,7 +11,7 @@ namespace BlockChainMiner
     public class Sha : ISha
     {
         #region Constructor
-        public Sha(string value)
+        public Sha(byte[] value)
         {
             this.value = value;
         }
@@ -20,8 +20,9 @@ namespace BlockChainMiner
 
 
         [DataMember]
-        private string value;
-        public string Value {
+        private byte[] value;
+        public byte[] Value
+        {
             get { return this.value; }
         }
     }

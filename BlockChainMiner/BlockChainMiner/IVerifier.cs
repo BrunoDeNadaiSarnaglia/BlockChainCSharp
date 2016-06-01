@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace BlockChainMiner
 {
-    public interface ISha
+    interface IVerifier
     {
-        byte[] Value { get; }
+        bool SatifyCriterium(ISha hash);
     }
 }
